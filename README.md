@@ -1,3 +1,7 @@
+![17](https://github.com/user-attachments/assets/23ce0ac9-9c20-407c-b571-6b2848b3c848)
+![16](https://github.com/user-attachments/assets/7eb926ec-b8e3-4901-84ff-c140501db891)
+![15](https://github.com/user-attachments/assets/31116f3d-5abc-41e9-8bad-92dcd0d79637)
+![14](https://github.com/user-attachments/assets/798b1442-8b98-46fc-bc36-db1ca6d72d34)
 ![10](https://github.com/user-attachments/assets/d2d5d605-11ba-4988-9602-bdbd651e8965)
 1- Kitap Yönetimi:
 
