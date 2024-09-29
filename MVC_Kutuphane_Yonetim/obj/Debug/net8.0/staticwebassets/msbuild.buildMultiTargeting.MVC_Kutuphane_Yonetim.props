@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\MVC_Kutuphane_Yonetim.props" />
+</Project>

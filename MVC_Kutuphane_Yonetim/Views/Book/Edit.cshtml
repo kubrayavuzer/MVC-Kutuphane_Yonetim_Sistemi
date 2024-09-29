@@ -1,0 +1,52 @@
+﻿@model BookEditViewModel
+
+
+ <div class="alert alert-info fw-bold">
+
+        @User.Claims.FirstOrDefault(x => x.Type == "email")?.Value -
+    @User.Claims.FirstOrDefault(x => x.Type == "id")?.Value
+
+    </div>
+
+@if (User.Claims.FirstOrDefault(x => x.Type == "id")?.Value != null)
+{
+
+    <h3>Kitap Düzenleme Sayfası</h3>
+
+    <form method="post" asp-controller="Book" asp-action="Edit">
+
+        <input type="hidden" asp-for="Id" />
+
+        <div>
+            <label>Kitap Adı</label>
+            <input asp-for="Title" class="form-control" type="text" />
+            <span asp-validation-for="Title" class="text-danger mt-2 fw-bold"></span>
+        </div>
+
+
+        <div>
+            <label>Yazar Adı</label>
+            <select asp-for="AuthorId" asp-items="@( new SelectList(ViewBag.Authors, "Id", "Name" ))" class="form-control">
+                <option selected disabled>Seçiniz</option>
+            </select>
+            <span asp-validation-for="AuthorId" class="text-danger mb-3 mt-2 fw-bold"></span>
+        </div>
+
+
+
+        <div>
+            <label>Sayfa Sayısı</label>
+            <input asp-for="NumberOfPages" class="form-control" type="text" />
+            <span asp-validation-for="NumberOfPages" class="text-danger mb-2 mt-2 fw-bold"></span>
+        </div>
+
+        <div>
+            <label>Detay</label>
+            <textarea asp-for="Details" rows="4" class="form-control"></textarea>
+            <span asp-validation-for="Details" class="text-danger mt-2 fw-bold"></span>
+        </div>
+
+        <button type="submit" class="btn btn-success mt-2">Kaydet</button>
+
+    </form>
+}

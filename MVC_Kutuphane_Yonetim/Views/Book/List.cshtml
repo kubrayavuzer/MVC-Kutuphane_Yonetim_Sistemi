@@ -1,0 +1,38 @@
+﻿@model List<BookListViewModel>
+
+     <div class="alert alert-info fw-bold">
+
+        @User.Claims.FirstOrDefault(x => x.Type == "email")?.Value -
+    @User.Claims.FirstOrDefault(x => x.Type == "id")?.Value
+
+    </div>
+
+@if (User.Claims.FirstOrDefault(x => x.Type == "id")?.Value != null)
+{
+
+  
+<h3 class=" text-center mt-5">Kitap Görüntüleme Sayfası</h3>
+<a asp-controller="Book" asp-action="Add" class="btn btn-primary fw-bold mb-3 mt-3">Yeni Ekle</a>
+
+<div class="mt-5">
+
+    @foreach (var task in Model)
+    {
+
+            <div class="card">
+                <div class="card-header fw-bold">
+                <h5>@task.Title</h5>
+            </div>
+
+            <div class="card-body"> 
+                
+                <p class="card-text">@task.Details</p>
+                <a asp-controller="Book" asp-action="CompleteTask" asp-route-id="@task.Id" class="btn btn-warning">@(task.IsDone == false? "Kitap Okundu" : "Kitabı Oku")</a>
+                <a asp-controller="Book" asp-action="Edit" asp-route-id="@task.Id" class="btn btn-success">Kitabı Düzenle</a>
+                <a asp-controller="Book" asp-action="CancelBook" asp-route-id="@task.Id" class="btn btn-danger">Kitabı Sil</a>
+            </div>
+        </div>
+    }
+
+</div>
+}

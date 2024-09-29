@@ -1,0 +1,43 @@
+﻿@model AuthorEditViewModel
+
+ <div class="alert alert-info fw-bold">
+
+        @User.Claims.FirstOrDefault(x => x.Type == "email")?.Value -
+    @User.Claims.FirstOrDefault(x => x.Type == "id")?.Value
+
+    </div>
+
+@if (User.Claims.FirstOrDefault(x => x.Type == "id")?.Value != null)
+{
+
+
+    <h3>Yazar Düzenleme Sayfası</h3>
+
+    <form method="post" asp-controller="Author" asp-action="Edit">
+
+        <div>
+            <label>Yazar Adı</label>
+            <input asp-for="Name" class="form-control" typle="text" />
+            <span asp-validation-for="Name" class="text-danger mt-2 fw-bold"></span>
+        </div>
+
+        <div>
+            <label>Yazar Soyadı</label>
+            <input asp-for="LastName" class="form-control" typle="text" />
+            <span asp-validation-for="LastName" class="text-danger mt-2 fw-bold"></span>
+        </div>
+
+
+        <div>
+            <label>Detay</label>
+            <textarea asp-for="Details" rows="4" class="form-control"></textarea>
+            <span asp-validation-for="Details" class="text-danger mt-2 fw-bold"></span>
+        </div>
+
+
+
+        <button type="submit" class="btn btn-success mt-2">Kaydet</button>
+
+
+    </form>
+}

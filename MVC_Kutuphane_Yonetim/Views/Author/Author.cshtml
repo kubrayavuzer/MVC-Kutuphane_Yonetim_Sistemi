@@ -1,0 +1,32 @@
+﻿@model List<AuthorViewModel>
+
+
+
+
+    <h3 class=" text-center mt-5">Yazar Görüntüleme Sayfası</h3>
+    <a asp-controller="Author" asp-action="Add" class="btn btn-primary fw-bold mb-3 mt-3">Yeni Ekle</a>
+
+    <div class="mt-5">
+
+        @foreach (var task in Model)
+    {
+        <div class="card">
+            <div class="card-header fw-bold">
+                @task.Name @task.LastName 
+            </div>
+            
+            
+            <div class="card-body">
+                <p class="card-text">@task.Details</p>
+                <a asp-controller="Author" asp-action="Edit" asp-route-id="@task.Id" class="btn btn-primary">Yazarı Düzenle</a>
+                <a asp-controller="Author" asp-action="CancelAuthor" asp-route-id="@task.Id" class="btn btn-danger">Yazarı Sil</a>
+
+            </div>
+        </div>
+    
+    
+    
+    
+    }
+
+

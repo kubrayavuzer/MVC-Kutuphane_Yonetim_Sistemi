@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\kubra\\source\\repos\\aaaaa\\MVC_Kutuphane_Yonetim\\wwwroot\\lib\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap.css"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MVC_Kutuphane_Yonetim.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.MVC_Kutuphane_Yonetim.props",
+      "PackagePath": "build\\MVC_Kutuphane_Yonetim.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.MVC_Kutuphane_Yonetim.props",
+      "PackagePath": "buildMultiTargeting\\MVC_Kutuphane_Yonetim.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.MVC_Kutuphane_Yonetim.props",
+      "PackagePath": "buildTransitive\\MVC_Kutuphane_Yonetim.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

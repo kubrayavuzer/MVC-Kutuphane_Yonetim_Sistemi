@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "8rYZIXuVNo+VRHpE+BtkxSqw19mIJLnvpwKFG1hOn7M=",
+  "Source": "MVC_Kutuphane_Yonetim",
+  "BasePath": "_content/MVC_Kutuphane_Yonetim",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "MVC_Kutuphane_Yonetim\\wwwroot",
+      "Source": "MVC_Kutuphane_Yonetim",
+      "ContentRoot": "C:\\Users\\kubra\\source\\repos\\aaaaa\\MVC_Kutuphane_Yonetim\\wwwroot\\",
+      "BasePath": "_content/MVC_Kutuphane_Yonetim",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\kubra\\source\\repos\\aaaaa\\MVC_Kutuphane_Yonetim\\wwwroot\\lib\\bootstrap.css",
+      "SourceId": "MVC_Kutuphane_Yonetim",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kubra\\source\\repos\\aaaaa\\MVC_Kutuphane_Yonetim\\wwwroot\\",
+      "BasePath": "_content/MVC_Kutuphane_Yonetim",
+      "RelativePath": "lib/bootstrap.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap.css"
+    }
+  ]
+}
