@@ -1,3 +1,4 @@
+![10](https://github.com/user-attachments/assets/d2d5d605-11ba-4988-9602-bdbd651e8965)
 1- Kitap Yönetimi:
 
 Kütüphane içindeki kitapların detaylı bir şekilde kaydedilmesi, listelenmesi, düzenlenmesi ve silinmesi işlevlerini içerir. Kullanıcılar, kitapların başlık, yazar, tür, yayın tarihi, ISBN numarası ve mevcut kopya sayısı gibi bilgilerini kaydedebilirler. Ayrıca, kitaplar arasında arama yapabilir ve istedikleri kitabın tüm detaylarına ulaşabilirler.
